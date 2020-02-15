@@ -53,11 +53,13 @@ CMAKE_BINARY_DIR = C:\Users\hp\Desktop\GitHub\Algorithms\CFF\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/CFF.dir/all
+all: CMakeFiles/CFF1.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles/CFF.dir/clean
+clean: CMakeFiles/CFF1.dir/clean
 
 .PHONY : clean
 
@@ -92,6 +94,33 @@ CFF: CMakeFiles/CFF.dir/rule
 CMakeFiles/CFF.dir/clean:
 	$(MAKE) -f CMakeFiles\CFF.dir\build.make CMakeFiles/CFF.dir/clean
 .PHONY : CMakeFiles/CFF.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CFF1.dir
+
+# All Build rule for target.
+CMakeFiles/CFF1.dir/all:
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/depend
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\hp\Desktop\GitHub\Algorithms\CFF\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target CFF1"
+.PHONY : CMakeFiles/CFF1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CFF1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\hp\Desktop\GitHub\Algorithms\CFF\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/CFF1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\hp\Desktop\GitHub\Algorithms\CFF\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/CFF1.dir/rule
+
+# Convenience name for target.
+CFF1: CMakeFiles/CFF1.dir/rule
+
+.PHONY : CFF1
+
+# clean rule for target.
+CMakeFiles/CFF1.dir/clean:
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/clean
+.PHONY : CMakeFiles/CFF1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

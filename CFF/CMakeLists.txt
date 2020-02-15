@@ -4,3 +4,4 @@ project(CFF)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(CFF main.cpp)
+add_executable(CFF1 201912-1.cpp)

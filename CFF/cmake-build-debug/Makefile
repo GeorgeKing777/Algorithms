@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\hp\Desktop\GitHub\Algorithms\CFF\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"F:\Clion\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"F:\Clion\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,46 @@ CFF/fast:
 	$(MAKE) -f CMakeFiles\CFF.dir\build.make CMakeFiles/CFF.dir/build
 .PHONY : CFF/fast
 
+#=============================================================================
+# Target rules for targets named CFF1
+
+# Build rule for target.
+CFF1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 CFF1
+.PHONY : CFF1
+
+# fast build rule for target.
+CFF1/fast:
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/build
+.PHONY : CFF1/fast
+
+201912-1.obj: 201912-1.cpp.obj
+
+.PHONY : 201912-1.obj
+
+# target to build an object file
+201912-1.cpp.obj:
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/201912-1.cpp.obj
+.PHONY : 201912-1.cpp.obj
+
+201912-1.i: 201912-1.cpp.i
+
+.PHONY : 201912-1.i
+
+# target to preprocess a source file
+201912-1.cpp.i:
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/201912-1.cpp.i
+.PHONY : 201912-1.cpp.i
+
+201912-1.s: 201912-1.cpp.s
+
+.PHONY : 201912-1.s
+
+# target to generate assembly for a file
+201912-1.cpp.s:
+	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/201912-1.cpp.s
+.PHONY : 201912-1.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -156,8 +196,12 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... CFF
-	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... CFF1
+	@echo ... edit_cache
+	@echo ... 201912-1.obj
+	@echo ... 201912-1.i
+	@echo ... 201912-1.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
