@@ -115,6 +115,50 @@
 					<DistClean command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="CFF2">
+				<Option output="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/CFF2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 CFF2"/>
+					<CompileFile command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CFF2/fast">
+				<Option output="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/CFF2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="f:\clion\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 CFF2/fast"/>
+					<CompileFile command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/Clion/bin/mingw32-make.exe -f &quot;C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/cmake-build-debug"/>
 				<Option type="4"/>
@@ -128,6 +172,9 @@
 		</Build>
 		<Unit filename="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/201912-1.cpp">
 			<Option target="CFF1"/>
+		</Unit>
+		<Unit filename="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/201912-2.cpp">
+			<Option target="CFF2"/>
 		</Unit>
 		<Unit filename="C:/Users/hp/Desktop/GitHub/Algorithms/CFF/main.cpp">
 			<Option target="CFF"/>
