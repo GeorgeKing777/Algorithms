@@ -135,6 +135,19 @@ CFF1/fast:
 	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/build
 .PHONY : CFF1/fast
 
+#=============================================================================
+# Target rules for targets named CFF2
+
+# Build rule for target.
+CFF2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 CFF2
+.PHONY : CFF2
+
+# fast build rule for target.
+CFF2/fast:
+	$(MAKE) -f CMakeFiles\CFF2.dir\build.make CMakeFiles/CFF2.dir/build
+.PHONY : CFF2/fast
+
 201912-1.obj: 201912-1.cpp.obj
 
 .PHONY : 201912-1.obj
@@ -161,6 +174,33 @@ CFF1/fast:
 201912-1.cpp.s:
 	$(MAKE) -f CMakeFiles\CFF1.dir\build.make CMakeFiles/CFF1.dir/201912-1.cpp.s
 .PHONY : 201912-1.cpp.s
+
+201912-2.obj: 201912-2.cpp.obj
+
+.PHONY : 201912-2.obj
+
+# target to build an object file
+201912-2.cpp.obj:
+	$(MAKE) -f CMakeFiles\CFF2.dir\build.make CMakeFiles/CFF2.dir/201912-2.cpp.obj
+.PHONY : 201912-2.cpp.obj
+
+201912-2.i: 201912-2.cpp.i
+
+.PHONY : 201912-2.i
+
+# target to preprocess a source file
+201912-2.cpp.i:
+	$(MAKE) -f CMakeFiles\CFF2.dir\build.make CMakeFiles/CFF2.dir/201912-2.cpp.i
+.PHONY : 201912-2.cpp.i
+
+201912-2.s: 201912-2.cpp.s
+
+.PHONY : 201912-2.s
+
+# target to generate assembly for a file
+201912-2.cpp.s:
+	$(MAKE) -f CMakeFiles\CFF2.dir\build.make CMakeFiles/CFF2.dir/201912-2.cpp.s
+.PHONY : 201912-2.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -198,10 +238,14 @@ help:
 	@echo ... CFF
 	@echo ... rebuild_cache
 	@echo ... CFF1
+	@echo ... CFF2
 	@echo ... edit_cache
 	@echo ... 201912-1.obj
 	@echo ... 201912-1.i
 	@echo ... 201912-1.s
+	@echo ... 201912-2.obj
+	@echo ... 201912-2.i
+	@echo ... 201912-2.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
