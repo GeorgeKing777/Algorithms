@@ -110,6 +110,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named CFF4
+
+# Build rule for target.
+CFF4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 CFF4
+.PHONY : CFF4
+
+# fast build rule for target.
+CFF4/fast:
+	$(MAKE) -f CMakeFiles\CFF4.dir\build.make CMakeFiles/CFF4.dir/build
+.PHONY : CFF4/fast
+
+#=============================================================================
 # Target rules for targets named CFF
 
 # Build rule for target.
@@ -147,6 +160,19 @@ CFF2: cmake_check_build_system
 CFF2/fast:
 	$(MAKE) -f CMakeFiles\CFF2.dir\build.make CMakeFiles/CFF2.dir/build
 .PHONY : CFF2/fast
+
+#=============================================================================
+# Target rules for targets named CFF3
+
+# Build rule for target.
+CFF3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 CFF3
+.PHONY : CFF3
+
+# fast build rule for target.
+CFF3/fast:
+	$(MAKE) -f CMakeFiles\CFF3.dir\build.make CMakeFiles/CFF3.dir/build
+.PHONY : CFF3/fast
 
 201912-1.obj: 201912-1.cpp.obj
 
@@ -202,6 +228,60 @@ CFF2/fast:
 	$(MAKE) -f CMakeFiles\CFF2.dir\build.make CMakeFiles/CFF2.dir/201912-2.cpp.s
 .PHONY : 201912-2.cpp.s
 
+201912-3.obj: 201912-3.cpp.obj
+
+.PHONY : 201912-3.obj
+
+# target to build an object file
+201912-3.cpp.obj:
+	$(MAKE) -f CMakeFiles\CFF3.dir\build.make CMakeFiles/CFF3.dir/201912-3.cpp.obj
+.PHONY : 201912-3.cpp.obj
+
+201912-3.i: 201912-3.cpp.i
+
+.PHONY : 201912-3.i
+
+# target to preprocess a source file
+201912-3.cpp.i:
+	$(MAKE) -f CMakeFiles\CFF3.dir\build.make CMakeFiles/CFF3.dir/201912-3.cpp.i
+.PHONY : 201912-3.cpp.i
+
+201912-3.s: 201912-3.cpp.s
+
+.PHONY : 201912-3.s
+
+# target to generate assembly for a file
+201912-3.cpp.s:
+	$(MAKE) -f CMakeFiles\CFF3.dir\build.make CMakeFiles/CFF3.dir/201912-3.cpp.s
+.PHONY : 201912-3.cpp.s
+
+BigIntCalculate.obj: BigIntCalculate.cpp.obj
+
+.PHONY : BigIntCalculate.obj
+
+# target to build an object file
+BigIntCalculate.cpp.obj:
+	$(MAKE) -f CMakeFiles\CFF4.dir\build.make CMakeFiles/CFF4.dir/BigIntCalculate.cpp.obj
+.PHONY : BigIntCalculate.cpp.obj
+
+BigIntCalculate.i: BigIntCalculate.cpp.i
+
+.PHONY : BigIntCalculate.i
+
+# target to preprocess a source file
+BigIntCalculate.cpp.i:
+	$(MAKE) -f CMakeFiles\CFF4.dir\build.make CMakeFiles/CFF4.dir/BigIntCalculate.cpp.i
+.PHONY : BigIntCalculate.cpp.i
+
+BigIntCalculate.s: BigIntCalculate.cpp.s
+
+.PHONY : BigIntCalculate.s
+
+# target to generate assembly for a file
+BigIntCalculate.cpp.s:
+	$(MAKE) -f CMakeFiles\CFF4.dir\build.make CMakeFiles/CFF4.dir/BigIntCalculate.cpp.s
+.PHONY : BigIntCalculate.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -235,10 +315,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... CFF4
 	@echo ... CFF
 	@echo ... rebuild_cache
 	@echo ... CFF1
 	@echo ... CFF2
+	@echo ... CFF3
 	@echo ... edit_cache
 	@echo ... 201912-1.obj
 	@echo ... 201912-1.i
@@ -246,6 +328,12 @@ help:
 	@echo ... 201912-2.obj
 	@echo ... 201912-2.i
 	@echo ... 201912-2.s
+	@echo ... 201912-3.obj
+	@echo ... 201912-3.i
+	@echo ... 201912-3.s
+	@echo ... BigIntCalculate.obj
+	@echo ... BigIntCalculate.i
+	@echo ... BigIntCalculate.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
